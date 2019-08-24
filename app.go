@@ -16,7 +16,11 @@ func main() {
     if err == nil {
         fmt.Println(string(data))
         type Schema struct {
+            Count int
             Colors []string
+            Obj struct {
+                Colors []string
+            }
         }
 
         var x Schema
@@ -24,6 +28,8 @@ func main() {
         if err == nil {
             fmt.Println("OK")
             fmt.Println(x.Colors)
+            fmt.Println(x.Count)
+            fmt.Println(x.Obj.Colors)
         } else {
             fmt.Println(err)
         }
