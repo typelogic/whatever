@@ -1,0 +1,13 @@
+{
+    "obj": {
+        "colors": [
+            "yellow",
+            "black"
+        ]
+    },
+    "colors":[
+        "red",
+        "blue"
+    ],
+    "count": 2
+}
